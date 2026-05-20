@@ -13,10 +13,7 @@ Carry assumptions over time
 
 Using those inputs, the model calculates:
 
-Dirty bond prices
-Cash-to-futures basis
-Basis in 32nds
-Projected basis behavior over time
+Dirty bond prices, Cash-to-futures basis, Basis in 32nds, Projected basis behavior over time
 
 The project also visualizes the projected basis using an automatically updating chart.
 
@@ -24,12 +21,7 @@ Educational Goal
 
 The purpose of this project is not to build a production trading system, but to help students understand the intuition behind:
 
-CME Treasury futures pricing
-Cheapest-to-Deliver (CTD) dynamics
-Conversion factors
-Implied financing and carry
-Basis trading
-Cash vs futures convergence
+CME Treasury futures pricing, Cheapest-to-Deliver (CTD) dynamics, Conversion factors, Implied financing and carry, Basis trading, Cash vs futures convergence
 
 Many discussions around Treasury futures remain highly theoretical. This project attempts to make the mechanics visual and interactive using a simple Excel framework.
 
@@ -37,13 +29,10 @@ Important Concepts
 Cheapest-to-Deliver (CTD)
 
 CME Treasury futures are deliverable futures contracts backed by a basket of eligible Treasury securities.
-
 Because multiple securities can be delivered into the contract, the market naturally gravitates toward the bond that is economically cheapest to deliver.
-
 This creates the concept of the CTD bond.
 
 Conversion Factors
-
 Since different Treasury securities have different coupons and maturities, CME uses conversion factors to standardize delivery economics.
 
 The futures-adjusted bond value is approximately:
