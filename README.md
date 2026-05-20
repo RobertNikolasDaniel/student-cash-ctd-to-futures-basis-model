@@ -1,97 +1,114 @@
 # student-cash-ctd-to-futures-basis-model
-This project is a simplified educational model designed to demonstrate how the cash U.S. Treasury market interacts with CME Treasury futures pricing through the Cheapest-to-Deliver (CTD) mechanism.
 
-Overview
+Educational Excel model for understanding CME Treasury futures basis trading and Cheapest-to-Deliver (CTD) mechanics.
 
-The spreadsheet allows a student to manually input:
+## Overview
 
-CTD cash bond prices
-Conversion factors
-CME futures prices
-Discount / financing assumptions
-Carry assumptions over time
+This project is a simplified educational model showing how U.S. Treasury cash securities interact with CME Treasury futures pricing.
 
-Using those inputs, the model calculates:
+The spreadsheet allows manual input of:
 
-Dirty bond prices, Cash-to-futures basis, Basis in 32nds, Projected basis behavior over time
+- CTD cash prices
+- Futures prices
+- Conversion factors
+- Discount / financing assumptions
 
-The project also visualizes the projected basis using an automatically updating chart.
+The model then calculates:
 
-Educational Goal
+- Dirty prices
+- Cash-to-futures basis
+- Basis in 32nds
+- Projected basis movement over time
 
-The purpose of this project is not to build a production trading system, but to help students understand the intuition behind:
+A simple chart visualizes projected basis behavior.
 
-CME Treasury futures pricing, Cheapest-to-Deliver (CTD) dynamics, Conversion factors, Implied financing and carry, Basis trading, Cash vs futures convergence
+---
 
-Many discussions around Treasury futures remain highly theoretical. This project attempts to make the mechanics visual and interactive using a simple Excel framework.
+## Concepts Covered
 
-Important Concepts
-Cheapest-to-Deliver (CTD)
+### Cheapest-to-Deliver (CTD)
 
-CME Treasury futures are deliverable futures contracts backed by a basket of eligible Treasury securities.
-Because multiple securities can be delivered into the contract, the market naturally gravitates toward the bond that is economically cheapest to deliver.
-This creates the concept of the CTD bond.
+CME Treasury futures are backed by a basket of eligible Treasury securities.
 
-Conversion Factors
-Since different Treasury securities have different coupons and maturities, CME uses conversion factors to standardize delivery economics.
+Because multiple bonds may be delivered into the contract, the market tends to favor the bond that is economically cheapest to deliver.
 
-The futures-adjusted bond value is approximately:
+This becomes the CTD security.
 
-Adjusted Futures Value=Futures Price×Conversion Factor
+---
 
-Cash-to-Futures Basis
+### Conversion Factors
 
-The basis represents the spread between the cash Treasury market and the implied futures-adjusted Treasury value.
+CME uses conversion factors to normalize bonds with different coupons and maturities.
 
-Simplified educational basis relationship:
+Simplified relationship:
 
-Basis=Dirty Cash Price−(Futures Price×Conversion Factor)
+Basis Adjusted Futures Value = Futures Price × Conversion Factor
 
-Positive or negative basis relationships can emerge due to financing conditions, delivery optionality, repo dynamics, and market positioning.
+---
 
-Features
-Manual CTD data input
-Simplified carry assumptions
-Automatic basis calculations
-Basis in price and 32nds
-Projected basis visualization
-Educational student-friendly design
-Expandable CTD rows
-Limitations
+### Cash-to-Futures Basis
 
-This is intentionally a simplified educational project.
+Simplified basis relationship:
 
-The model does NOT fully account for:
+Basis = Dirty Cash Price − (Futures Price × Conversion Factor)
 
-Repo specialness
-Delivery option value
-Coupon reinvestment timing
-Exact accrued interest settlement mechanics
-Invoice price settlement nuance
-Dynamic yield curve modeling
-Full carry decomposition
+This spread is commonly referred to as the Treasury futures basis.
 
-Professional rates desks use significantly more advanced infrastructure and real-time market data systems.
+---
 
-Why This Project Exists
+## Features
 
-This project was built to bridge the gap between:
+- Manual CTD input
+- Simplified financing assumptions
+- Automatic basis calculations
+- Basis in price and 32nds
+- Projected basis chart
+- Expandable CTD rows
+- Student-friendly structure
 
-textbook fixed income theory,
-futures contract mechanics,
-and actual market intuition.
+---
 
-The goal is to provide a clean, understandable framework for students learning rates trading and Treasury futures products.
+## Educational Purpose
 
-As strange as it sounds, simplicity is often more educational than overengineered complexity.
+This project was built to help students better understand:
 
-Technologies
-Microsoft Excel
-Fixed income mathematics
-CME Treasury futures concepts
-Basis trading intuition
-Disclaimer
+- Treasury futures pricing
+- CTD mechanics
+- Futures carry
+- Basis trading intuition
+- Cash vs futures convergence
+
+The goal was simplicity and intuition rather than institutional complexity.
+
+---
+
+## Limitations
+
+This is a simplified educational model.
+
+It does not fully account for:
+
+- repo specialness
+- delivery optionality
+- coupon reinvestment timing
+- settlement nuances
+- dynamic curve modeling
+- real-time market data
+
+---
+
+## Technologies
+
+- Microsoft Excel
+- Fixed income mathematics
+- CME Treasury futures concepts
+
+---
+
+## Disclaimer
 
 This project is for educational purposes only.
+
+It is not financial advice or institutional trading infrastructure.
 
 It is NOT financial advice, trading advice, or institutional-grade pricing infrastructure.
